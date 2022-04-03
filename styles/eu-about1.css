@@ -24,172 +24,138 @@ a:focus {
     padding-left: 15px;
     padding-right: 15px
 }
-.row {
-    margin-left: -15px;
-    margin-right: -15px
+/* Accessible for screen readers but hidden from view */
+.fa-hidden {
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
 }
-.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
-    position: relative;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px
+.rtl .fa-hidden {
+    left:10000px;
 }
-.col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
-    float: left
+.fa-showtext {
+    margin-right: 5px;
 }
-.col-xs-12 {
-    width: 100%
+body.single-post .post-body a {
+    color: #e49d00!important;
 }
-.col-xs-11 {
-    width: 91.66666667%
+p {
+    text-align: justify;
 }
-.col-xs-10 {
-    width: 83.33333333%
+
+.page-title, .section-title {
+    color: #241fb6 !important;
 }
-.col-xs-9 {
-    width: 75%
+
+.page-title::after, .section-title::after {
+    background: #241fb6 !important;
 }
-.col-xs-8 {
-    width: 66.66666667%
+
+#menu-footer-menu li a {
+    color: #241fb6 !important;
+    text-transform: uppercase;
 }
-.col-xs-7 {
-    width: 58.33333333%
+
+footer .menu li a {
+    color: #241fb6 !important;
 }
-.col-xs-6 {
-    width: 50%
+
+footer .menu#social-media li a {
+    border: solid 2px #241fb6 !important;
 }
-.col-xs-5 {
-    width: 41.66666667%
+
+footer .menu#social-media li a:focus, footer .menu#social-media li a:hover {
+    background: #241fb6 !important;
 }
-.col-xs-4 {
-    width: 33.33333333%
+
+body.home .section-menu a {
+    color: #241fb6 !important;
+    text-transform: uppercase;
 }
-.col-xs-3 {
-    width: 25%
+
+body.home .section-menu a::after {
+    background: #241fb6 !important;
 }
-.col-xs-2 {
-    width: 16.66666667%
+
+.footer-menu{
+    display: none!important;
 }
-.col-xs-1 {
-    width: 8.33333333%
+footer .menu#footer li {
+    margin-right: 1.5em;
 }
-.col-xs-pull-12 {
-    right: 100%
+
+.fmenu{
+    text-align: center;
 }
-.col-xs-pull-11 {
-    right: 91.66666667%
+
+footer .menu#footer li a {
+    font-family: Poppins;
+    font-size: .875em;
+    font-weight: 500;
+    letter-spacing: .0375em;
+    text-transform: uppercase;
 }
-.col-xs-pull-10 {
-    right: 83.33333333%
+
+footer #copyright {
+    text-align: center;
 }
-.col-xs-pull-9 {
-    right: 75%
+
+footer #yelp-attribute {
+    text-align: center;
+    width: 100%;
 }
-.col-xs-pull-8 {
-    right: 66.66666667%
+
+@media screen and (max-width: 420px){
+
+    footer .menu#footer {
+        display: block!important;
+    }
+
+    footer .menu#footer li {
+        margin-right: 0px;
+        display: block;
+    }
+
+    footer .menu#footer li a {
+        font-family: Poppins;
+        font-size: .875em;
+        font-weight: 500;
+        letter-spacing: .0375em;
+        text-transform: uppercase;
+    }
+
+    .fmenu {
+        text-align: center;
+    }
+
+    footer .menu#social-media {
+        text-align: center;
+    }
+
+    footer #copyright {
+        text-align: center;
+    }
+
+    footer #yelp-attribute {
+        text-align: center;
+        width: 100%;
+        padding-top: 10px;
+        margin: 0px;
+    }
+
+    .left{
+        text-align: center;
+    }
+
+    .right{
+        margin-bottom: 20px;
+    }
+
 }
-.col-xs-pull-7 {
-    right: 58.33333333%
-}
-.col-xs-pull-6 {
-    right: 50%
-}
-.col-xs-pull-5 {
-    right: 41.66666667%
-}
-.col-xs-pull-4 {
-    right: 33.33333333%
-}
-.col-xs-pull-3 {
-    right: 25%
-}
-.col-xs-pull-2 {
-    right: 16.66666667%
-}
-.col-xs-pull-1 {
-    right: 8.33333333%
-}
-.col-xs-pull-0 {
-    right: auto
-}
-.col-xs-push-12 {
-    left: 100%
-}
-.col-xs-push-11 {
-    left: 91.66666667%
-}
-.col-xs-push-10 {
-    left: 83.33333333%
-}
-.col-xs-push-9 {
-    left: 75%
-}
-.col-xs-push-8 {
-    left: 66.66666667%
-}
-.col-xs-push-7 {
-    left: 58.33333333%
-}
-.col-xs-push-6 {
-    left: 50%
-}
-.col-xs-push-5 {
-    left: 41.66666667%
-}
-.col-xs-push-4 {
-    left: 33.33333333%
-}
-.col-xs-push-3 {
-    left: 25%
-}
-.col-xs-push-2 {
-    left: 16.66666667%
-}
-.col-xs-push-1 {
-    left: 8.33333333%
-}
-.col-xs-push-0 {
-    left: auto
-}
-.col-xs-offset-12 {
-    margin-left: 100%
-}
-.col-xs-offset-11 {
-    margin-left: 91.66666667%
-}
-.col-xs-offset-10 {
-    margin-left: 83.33333333%
-}
-.col-xs-offset-9 {
-    margin-left: 75%
-}
-.col-xs-offset-8 {
-    margin-left: 66.66666667%
-}
-.col-xs-offset-7 {
-    margin-left: 58.33333333%
-}
-.col-xs-offset-6 {
-    margin-left: 50%
-}
-.col-xs-offset-5 {
-    margin-left: 41.66666667%
-}
-.col-xs-offset-4 {
-    margin-left: 33.33333333%
-}
-.col-xs-offset-3 {
-    margin-left: 25%
-}
-.col-xs-offset-2 {
-    margin-left: 16.66666667%
-}
-.col-xs-offset-1 {
-    margin-left: 8.33333333%
-}
-.col-xs-offset-0 {
-    margin-left: 0
-}
+
 @media (min-width:992px) {
     .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9 {
         float: left
@@ -365,7 +331,6 @@ body {
     background: #f5f5f5;
     font-family: 'Source Serif Pro';
     font-size: 16px;
-    line-height: 1.45
 }
 * {
     -webkit-font-smoothing: antialiased;
@@ -414,38 +379,10 @@ a {
     transition: all .25s ease-out
 }
 a:focus, a:hover {
-    color: #b6231f;
+    color: #241fb6;
     text-decoration: none
 }
-a.read-more {
-    font-family: Poppins;
-    font-size: .75em;
-    font-weight: 600;
-    text-transform: uppercase
-}
-a.read-more::after {
-    content: '\003E';
-    margin-left: .375em
-}
-a.button {
-    display: inline-block;
-    border-style: solid;
-    border-width: 3px;
-    padding: .75em .8125em .625em;
-    font-family: Poppins;
-    font-size: .9375em;
-    font-weight: 600;
-    line-height: 1;
-    text-transform: uppercase
-}
-a.button.white {
-    border-color: #fff;
-    color: #fff
-}
-a.button.white:focus, a.button.white:hover {
-    background: #fff;
-    color: #333
-}
+
 .yelp-stars {
     background-image: url(../../images/yelp-ratings.png)
 }
@@ -459,7 +396,7 @@ header {
     padding: .5em .75em;
     background: #fff;
     box-shadow: 0 0 20px rgba(0, 0, 0, .05);
-    line-height: 1
+    line-height: 0
 }
 header a.logo {
     display: inline-block;
@@ -509,7 +446,7 @@ header .menu ul a {
     transition: all .3s ease-out
 }
 header .menu ul a:focus, header .menu ul a:hover {
-    color: #b6231f
+    color: #241fb6
 }
 header .menu ul.main-menu {
     width: 100%
@@ -762,7 +699,7 @@ footer .newsletter-heading {
     margin: .875em 0 1em;
     font-size: .875em;
     font-weight: 600;
-    color: #b6231f
+    color: #241fb6
 }
 footer .tnp-field {
     display: inline-block;
@@ -869,10 +806,6 @@ footer #copyright {
         width: 40px;
         height: 4px
     }
-    header a.logo {
-        -webkit-transition-delay: 0;
-        transition-delay: 0
-    }
     header a.logo.invisible {
         visibility: visible;
         opacity: 1;
@@ -914,10 +847,7 @@ footer #copyright {
         height: 87px;
         padding: .75em 1em
     }
-    header a.logo {
-        width: 90px;
-        height: 63px
-    }
+
     header .menu {
         position: absolute;
         display: block ;
@@ -1049,8 +979,11 @@ footer #copyright {
         font-size: 1em
     }
     /*distance between flags and riomaggiore*/
+    /*distance between border and flag*/
+    /*distance top and bottom*/
+
     .language-switcher {
-        margin: 0 0 0 0em
+        margin: 0 10px 0 0em
     }
     /* distance flags change language*/
     .language-switcher>* {
@@ -1140,8 +1073,8 @@ footer #copyright {
     }
 
     header .menu {
-        right: 1.5em;
-        bottom: 1.25em
+        right: 3.5em;
+        bottom: 1em
     }
 
     header .menu ul.main-menu {
